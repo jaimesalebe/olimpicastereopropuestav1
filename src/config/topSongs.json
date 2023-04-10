@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Shakira",
+        "song": "Bzrp Music Sessions, Vol. 53",
+        "artist": "./images/topSongs/shakira-min.jpg"
+    },
+    {
+        "name": "Joe Arroyo",
+        "song": "Rebelión",
+        "artist": "./images/topSongs/joeArroyo-min.png"
+    },    {
+        "name": "Maluma",
+        "song": "Borró Cassette",
+        "artist": "./images/topSongs/maluma-min.jpg"
+    },
+    {
+        "name": "Raulín Rosendo",
+        "song": "Uno se cura",
+        "artist": "./images/topSongs/raulinRosendo-min.jpg"
+    },
+    {
+        "name": "Tito Nieves",
+        "song": "Fabricando fantasías",
+        "artist": "./images/topSongs/titoNieves-min.jpg"
+    }
+]

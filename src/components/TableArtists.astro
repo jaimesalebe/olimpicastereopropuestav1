@@ -1,0 +1,45 @@
+---
+import topSongs from '../config/topSongs.json'
+---
+<div class="sm:w-96 gap-1 bg-white shadow-lg rounded-xl border border-gray-200">
+    <header class="px-5 py-4 border-b border-gray-100">
+        <h2 class="font-semibold text-gray-800">Top #5</h2>
+    </header>
+    <table class="table-auto w-full">
+        <thead
+            class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
+        >
+            <tr>
+                <th class="px-10 whitespace-nowrap text-left">Artista</th>
+                <th class="p-2 whitespace-nowrap">Canción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {
+                topSongs.map(topSong => (
+                <tr class="text-sm divide-y divide-gray-100">
+                <td class="p-2 whitespace-nowrap flex items-center">
+                    <div class="sm:w-10 sm:h-10 flex-shrink-0 mr-2 sm:mr-3">
+                        <img                            
+                            src={topSong.artist}
+                            alt={topSong.name}
+                            width="0"
+                            height="0"
+                            class="rounded-full h-10 w-10"
+                        />
+                    </div>
+                    <div class="font-medium text-gray-800">
+                        {topSong.name}
+                    </div>
+                </td>
+                <td class="p-2 whitespace-nowrap text-center">
+                    {
+                        topSong.song
+                    }    
+                </td>
+            </tr>
+                ))
+            }
+        </tbody>
+    </table>
+</div>

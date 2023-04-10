@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import about from "../config/about.json";
+import Stations from "../components/index/Stations.astro";
+import Gallery from "../components/Gallery.astro";
+---
+
+<Layout title="About">
+    <section class="container mx-auto grid sm:grid-cols-2 gap-8 px-4 my-10">
+        <img
+            src="https://www.elheraldo.co/sites/default/files/articulo/2022/09/01/olimpica_2.jpg"
+            alt="image"
+            class="rounded-s-md rounded-e-md sm:rounded-e-full sm:h-60 w-full object-cover"
+        />
+        {
+            about.map((about) => (
+                <div class="flex flex-col">
+                    <h1 class="text-3xl font-bold">{about.title}</h1>
+                    <p class="text-lg text-justify">{about.description}</p>
+                </div>
+            ))
+        }
+    </section>
+    <section>
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Nuestras Emisoras 📻</h1>
+            <p class="text-xl">Con todos tus generos y artistas favoritos</p>
+        </div>
+        <Stations />
+    </section>
+    <Gallery/>
+</Layout>

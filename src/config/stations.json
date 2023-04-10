@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Play",
+        "image": "./images/stations/playfm-min.png",
+        "isActive": false
+    },
+    {
+        "name": "Radio Tiempo",
+        "image": "./images/stations/radiotiempofm-min.png",
+        "url": "https://www.radiotiempo.co/",
+        "isActive": true
+    },
+    {
+        "name": "La Reina",
+        "image": "./images/stations/lareinafm-min.png",
+        "url": "https://lareinadelvallenato.co/",
+        "isActive": false
+    },
+    {
+        "name": "Emisora Atlantico",
+        "image": "./images/stations/emisoraatlanticoam-min.png",
+        "url": "https://emisoraatlantico.com.co/",
+        "isActive": true
+    },
+    {
+        "name": "Mix",
+        "image": "./images/stations/mixfm-min.png",
+        "url": "https://mixradio.co/",
+        "isActive": false
+    },
+    {
+        "name": "Olimpica Stereo",
+        "image": "./images/stations/olimpicastereofm-min.png",
+        "url": "https://olimpicastereo.com.co/",
+        "isActive": true
+    }
+]

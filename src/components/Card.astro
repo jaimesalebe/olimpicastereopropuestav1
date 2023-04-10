@@ -1,0 +1,27 @@
+---
+import news from '../config/news.json'
+---
+
+{
+    news.slice(0,3).map((n) => (
+        <a href={n.url} class="hover:scale-105 hover:transition-all">
+            <li class="flex flex-col max-w-sm rounded-lg bg-white shadow-lg">
+                <img
+                    src={n.urlToImage}
+                    alt=""
+                    width="0"
+                    height="0"
+                    class="rounded-t-lg w-full h-32  object-cover"
+                />
+                <div class="p-6">
+                    <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 line-clamp-2">
+                        {n.title}
+                    </h5>
+                    <p class="mb-4 text-base text-neutral-600 line-clamp-2">
+                        {n.content}
+                    </p>
+                </div>
+            </li>
+        </a>
+    ))
+}

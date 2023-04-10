@@ -1,0 +1,14 @@
+---
+import SocialMedia from "./SocialMedia.astro";
+
+let date = new Date().toLocaleDateString("en-us", { year: "numeric" });
+---
+
+<footer
+    class="bg-neutral-900 py-10 text-white mx-auto flex flex-col md:flex-row justify-evenly text-center md:text-left gap4"
+>
+    <h4 class="font-bold text-l">© {date} Olimpica Stereo ● Gózatela</h4>
+    <div>
+        <SocialMedia/>
+    </div>
+</footer>
